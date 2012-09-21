@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DMViewController : UIViewController
+@interface DMViewController : UIViewController <UIPopoverControllerDelegate>
+
+@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) UIPopoverController *popover;
+
+-(IBAction)actionButton:(id)sender;
 
 @end

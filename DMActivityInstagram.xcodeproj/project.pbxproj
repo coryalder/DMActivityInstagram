@@ -19,10 +19,18 @@
 		8B03DB14160C5DD50070B8B0 /* DMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB13160C5DD50070B8B0 /* DMViewController.m */; };
 		8B03DB17160C5DD50070B8B0 /* DMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB15160C5DD50070B8B0 /* DMViewController_iPhone.xib */; };
 		8B03DB1A160C5DD50070B8B0 /* DMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB18160C5DD50070B8B0 /* DMViewController_iPad.xib */; };
+		8B03DB21160C5F380070B8B0 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB20160C5F380070B8B0 /* example.png */; };
+		8B03DB24160C62700070B8B0 /* DMActivityInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */; };
+		8B03DB2C160C6CEC0070B8B0 /* DMResizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB2A160C6CEC0070B8B0 /* DMResizerViewController.m */; };
+		8B03DB2D160C6CEC0070B8B0 /* DMResizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB2B160C6CEC0070B8B0 /* DMResizerViewController.xib */; };
+		8BFEBF99160C774900A4A213 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF95160C774900A4A213 /* instagram.png */; };
+		8BFEBF9A160C774900A4A213 /* instagram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF96160C774900A4A213 /* instagram@2x.png */; };
+		8BFEBF9B160C774900A4A213 /* instagram~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF97160C774900A4A213 /* instagram~ipad.png */; };
+		8BFEBF9C160C774900A4A213 /* instagram~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8B03DAF6160C5DD50070B8B0 /* DMActivityInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMActivityInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B03DAF6160C5DD50070B8B0 /* DMAI Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DMAI Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B03DAFA160C5DD50070B8B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8B03DAFC160C5DD50070B8B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B03DAFE160C5DD50070B8B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -39,6 +47,16 @@
 		8B03DB13160C5DD50070B8B0 /* DMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMViewController.m; sourceTree = "<group>"; };
 		8B03DB16160C5DD50070B8B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DMViewController_iPhone.xib; sourceTree = "<group>"; };
 		8B03DB19160C5DD50070B8B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DMViewController_iPad.xib; sourceTree = "<group>"; };
+		8B03DB20160C5F380070B8B0 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		8B03DB22160C62700070B8B0 /* DMActivityInstagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMActivityInstagram.h; sourceTree = "<group>"; };
+		8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMActivityInstagram.m; sourceTree = "<group>"; };
+		8B03DB29160C6CEC0070B8B0 /* DMResizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMResizerViewController.h; sourceTree = "<group>"; };
+		8B03DB2A160C6CEC0070B8B0 /* DMResizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMResizerViewController.m; sourceTree = "<group>"; };
+		8B03DB2B160C6CEC0070B8B0 /* DMResizerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMResizerViewController.xib; sourceTree = "<group>"; };
+		8BFEBF95160C774900A4A213 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		8BFEBF96160C774900A4A213 /* instagram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram@2x.png"; sourceTree = "<group>"; };
+		8BFEBF97160C774900A4A213 /* instagram~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram~ipad.png"; sourceTree = "<group>"; };
+		8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram~ipad@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +85,7 @@
 		8B03DAF7160C5DD50070B8B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B03DAF6160C5DD50070B8B0 /* DMActivityInstagram.app */,
+				8B03DAF6160C5DD50070B8B0 /* DMAI Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,8 +107,14 @@
 				8B03DB0A160C5DD50070B8B0 /* DMAppDelegate.m */,
 				8B03DB12160C5DD50070B8B0 /* DMViewController.h */,
 				8B03DB13160C5DD50070B8B0 /* DMViewController.m */,
+				8B03DB22160C62700070B8B0 /* DMActivityInstagram.h */,
+				8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */,
+				8B03DB29160C6CEC0070B8B0 /* DMResizerViewController.h */,
+				8B03DB2A160C6CEC0070B8B0 /* DMResizerViewController.m */,
+				8B03DB2B160C6CEC0070B8B0 /* DMResizerViewController.xib */,
 				8B03DB15160C5DD50070B8B0 /* DMViewController_iPhone.xib */,
 				8B03DB18160C5DD50070B8B0 /* DMViewController_iPad.xib */,
+				8BFEBF9D160C776000A4A213 /* Images */,
 				8B03DB01160C5DD50070B8B0 /* Supporting Files */,
 			);
 			path = DMActivityInstagram;
@@ -110,12 +134,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8BFEBF9D160C776000A4A213 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8BFEBF95160C774900A4A213 /* instagram.png */,
+				8BFEBF96160C774900A4A213 /* instagram@2x.png */,
+				8BFEBF97160C774900A4A213 /* instagram~ipad.png */,
+				8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */,
+				8B03DB20160C5F380070B8B0 /* example.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B03DAF5160C5DD50070B8B0 /* DMActivityInstagram */ = {
+		8B03DAF5160C5DD50070B8B0 /* DMAI Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B03DB1D160C5DD50070B8B0 /* Build configuration list for PBXNativeTarget "DMActivityInstagram" */;
+			buildConfigurationList = 8B03DB1D160C5DD50070B8B0 /* Build configuration list for PBXNativeTarget "DMAI Demo" */;
 			buildPhases = (
 				8B03DAF2160C5DD50070B8B0 /* Sources */,
 				8B03DAF3160C5DD50070B8B0 /* Frameworks */,
@@ -125,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = DMActivityInstagram;
+			name = "DMAI Demo";
 			productName = DMActivityInstagram;
-			productReference = 8B03DAF6160C5DD50070B8B0 /* DMActivityInstagram.app */;
+			productReference = 8B03DAF6160C5DD50070B8B0 /* DMAI Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B03DAF5160C5DD50070B8B0 /* DMActivityInstagram */,
+				8B03DAF5160C5DD50070B8B0 /* DMAI Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -168,6 +204,12 @@
 				8B03DB11160C5DD50070B8B0 /* Default-568h@2x.png in Resources */,
 				8B03DB17160C5DD50070B8B0 /* DMViewController_iPhone.xib in Resources */,
 				8B03DB1A160C5DD50070B8B0 /* DMViewController_iPad.xib in Resources */,
+				8B03DB21160C5F380070B8B0 /* example.png in Resources */,
+				8B03DB2D160C6CEC0070B8B0 /* DMResizerViewController.xib in Resources */,
+				8BFEBF99160C774900A4A213 /* instagram.png in Resources */,
+				8BFEBF9A160C774900A4A213 /* instagram@2x.png in Resources */,
+				8BFEBF9B160C774900A4A213 /* instagram~ipad.png in Resources */,
+				8BFEBF9C160C774900A4A213 /* instagram~ipad@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +223,8 @@
 				8B03DB07160C5DD50070B8B0 /* main.m in Sources */,
 				8B03DB0B160C5DD50070B8B0 /* DMAppDelegate.m in Sources */,
 				8B03DB14160C5DD50070B8B0 /* DMViewController.m in Sources */,
+				8B03DB24160C62700070B8B0 /* DMActivityInstagram.m in Sources */,
+				8B03DB2C160C6CEC0070B8B0 /* DMResizerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +312,14 @@
 		8B03DB1E160C5DD50070B8B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cory Alder (XG27T44ZTT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Cory Alder (XG27T44ZTT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMActivityInstagram/DMActivityInstagram-Prefix.pch";
 				INFOPLIST_FILE = "DMActivityInstagram/DMActivityInstagram-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C174F352-1E02-4DE8-830A-68ED1705666B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C174F352-1E02-4DE8-830A-68ED1705666B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -299,13 +347,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B03DB1D160C5DD50070B8B0 /* Build configuration list for PBXNativeTarget "DMActivityInstagram" */ = {
+		8B03DB1D160C5DD50070B8B0 /* Build configuration list for PBXNativeTarget "DMAI Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B03DB1E160C5DD50070B8B0 /* Debug */,
 				8B03DB1F160C5DD50070B8B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
