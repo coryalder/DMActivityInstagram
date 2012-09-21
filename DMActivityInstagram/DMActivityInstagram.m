@@ -43,7 +43,9 @@
         else if ([item isKindOfClass:[NSString class]]) {
             self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),item]; // concat, with space if already exists.
         }
-        else if ([item isKindOfClass:[NSURL class]]) self.shareURL = item;
+        else if ([item isKindOfClass:[NSURL class]]) {
+            self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),[(NSURL *)item absoluteString]]; // concat, with space if already exists.
+        }
         else NSLog(@"Unknown item type %@", item);
     }
 }

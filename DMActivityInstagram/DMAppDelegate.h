@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class DMViewController;
+@class DMAIDemoViewController;
 
 @interface DMAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) DMViewController *viewController;
+@property (strong, nonatomic) DMAIDemoViewController *viewController;
 
 @end

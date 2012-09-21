@@ -55,17 +55,6 @@
     self.scrollView.contentSize = self.imageView.frame.size;
     
     // Do any additional setup after loading the view from its nib.
-    
-    // Bounce the meowLabel.
-    [UIView animateWithDuration:1.0f delay:1.0f options:
-        UIViewAnimationOptionCurveEaseInOut+UIViewAnimationOptionRepeat+UIViewAnimationOptionAutoreverse+UIViewAnimationOptionAllowUserInteraction
-        
-    animations:^{
-        // animation
-        self.bottomLabel.transform = CGAffineTransformMakeScale(1.2f, 1.2f);
-        
-    } completion:nil];
-    
 }
 
 - (void)viewDidUnload

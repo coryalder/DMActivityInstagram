@@ -16,9 +16,9 @@
 		8B03DB0D160C5DD50070B8B0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB0C160C5DD50070B8B0 /* Default.png */; };
 		8B03DB0F160C5DD50070B8B0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB0E160C5DD50070B8B0 /* Default@2x.png */; };
 		8B03DB11160C5DD50070B8B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB10160C5DD50070B8B0 /* Default-568h@2x.png */; };
-		8B03DB14160C5DD50070B8B0 /* DMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB13160C5DD50070B8B0 /* DMViewController.m */; };
-		8B03DB17160C5DD50070B8B0 /* DMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB15160C5DD50070B8B0 /* DMViewController_iPhone.xib */; };
-		8B03DB1A160C5DD50070B8B0 /* DMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB18160C5DD50070B8B0 /* DMViewController_iPad.xib */; };
+		8B03DB14160C5DD50070B8B0 /* DMAIDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB13160C5DD50070B8B0 /* DMAIDemoViewController.m */; };
+		8B03DB17160C5DD50070B8B0 /* DMAIDemoViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB15160C5DD50070B8B0 /* DMAIDemoViewController_iPhone.xib */; };
+		8B03DB1A160C5DD50070B8B0 /* DMAIDemoViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB18160C5DD50070B8B0 /* DMAIDemoViewController_iPad.xib */; };
 		8B03DB21160C5F380070B8B0 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB20160C5F380070B8B0 /* example.png */; };
 		8B03DB24160C62700070B8B0 /* DMActivityInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */; };
 		8B03DB2C160C6CEC0070B8B0 /* DMResizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB2A160C6CEC0070B8B0 /* DMResizerViewController.m */; };
@@ -43,10 +43,10 @@
 		8B03DB0C160C5DD50070B8B0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8B03DB0E160C5DD50070B8B0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8B03DB10160C5DD50070B8B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		8B03DB12160C5DD50070B8B0 /* DMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMViewController.h; sourceTree = "<group>"; };
-		8B03DB13160C5DD50070B8B0 /* DMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMViewController.m; sourceTree = "<group>"; };
-		8B03DB16160C5DD50070B8B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DMViewController_iPhone.xib; sourceTree = "<group>"; };
-		8B03DB19160C5DD50070B8B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DMViewController_iPad.xib; sourceTree = "<group>"; };
+		8B03DB12160C5DD50070B8B0 /* DMAIDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAIDemoViewController.h; sourceTree = "<group>"; };
+		8B03DB13160C5DD50070B8B0 /* DMAIDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAIDemoViewController.m; sourceTree = "<group>"; };
+		8B03DB16160C5DD50070B8B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DMAIDemoViewController_iPhone.xib; sourceTree = "<group>"; };
+		8B03DB19160C5DD50070B8B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DMAIDemoViewController_iPad.xib; sourceTree = "<group>"; };
 		8B03DB20160C5F380070B8B0 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		8B03DB22160C62700070B8B0 /* DMActivityInstagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMActivityInstagram.h; sourceTree = "<group>"; };
 		8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMActivityInstagram.m; sourceTree = "<group>"; };
@@ -105,15 +105,15 @@
 			children = (
 				8B03DB09160C5DD50070B8B0 /* DMAppDelegate.h */,
 				8B03DB0A160C5DD50070B8B0 /* DMAppDelegate.m */,
-				8B03DB12160C5DD50070B8B0 /* DMViewController.h */,
-				8B03DB13160C5DD50070B8B0 /* DMViewController.m */,
+				8B03DB12160C5DD50070B8B0 /* DMAIDemoViewController.h */,
+				8B03DB13160C5DD50070B8B0 /* DMAIDemoViewController.m */,
 				8B03DB22160C62700070B8B0 /* DMActivityInstagram.h */,
 				8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */,
 				8B03DB29160C6CEC0070B8B0 /* DMResizerViewController.h */,
 				8B03DB2A160C6CEC0070B8B0 /* DMResizerViewController.m */,
 				8B03DB2B160C6CEC0070B8B0 /* DMResizerViewController.xib */,
-				8B03DB15160C5DD50070B8B0 /* DMViewController_iPhone.xib */,
-				8B03DB18160C5DD50070B8B0 /* DMViewController_iPad.xib */,
+				8B03DB15160C5DD50070B8B0 /* DMAIDemoViewController_iPhone.xib */,
+				8B03DB18160C5DD50070B8B0 /* DMAIDemoViewController_iPad.xib */,
 				8BFEBF9D160C776000A4A213 /* Images */,
 				8B03DB01160C5DD50070B8B0 /* Supporting Files */,
 			);
@@ -202,8 +202,8 @@
 				8B03DB0D160C5DD50070B8B0 /* Default.png in Resources */,
 				8B03DB0F160C5DD50070B8B0 /* Default@2x.png in Resources */,
 				8B03DB11160C5DD50070B8B0 /* Default-568h@2x.png in Resources */,
-				8B03DB17160C5DD50070B8B0 /* DMViewController_iPhone.xib in Resources */,
-				8B03DB1A160C5DD50070B8B0 /* DMViewController_iPad.xib in Resources */,
+				8B03DB17160C5DD50070B8B0 /* DMAIDemoViewController_iPhone.xib in Resources */,
+				8B03DB1A160C5DD50070B8B0 /* DMAIDemoViewController_iPad.xib in Resources */,
 				8B03DB21160C5F380070B8B0 /* example.png in Resources */,
 				8B03DB2D160C6CEC0070B8B0 /* DMResizerViewController.xib in Resources */,
 				8BFEBF99160C774900A4A213 /* instagram.png in Resources */,
@@ -222,7 +222,7 @@
 			files = (
 				8B03DB07160C5DD50070B8B0 /* main.m in Sources */,
 				8B03DB0B160C5DD50070B8B0 /* DMAppDelegate.m in Sources */,
-				8B03DB14160C5DD50070B8B0 /* DMViewController.m in Sources */,
+				8B03DB14160C5DD50070B8B0 /* DMAIDemoViewController.m in Sources */,
 				8B03DB24160C62700070B8B0 /* DMActivityInstagram.m in Sources */,
 				8B03DB2C160C6CEC0070B8B0 /* DMResizerViewController.m in Sources */,
 			);
@@ -239,20 +239,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		8B03DB15160C5DD50070B8B0 /* DMViewController_iPhone.xib */ = {
+		8B03DB15160C5DD50070B8B0 /* DMAIDemoViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8B03DB16160C5DD50070B8B0 /* en */,
 			);
-			name = DMViewController_iPhone.xib;
+			name = DMAIDemoViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		8B03DB18160C5DD50070B8B0 /* DMViewController_iPad.xib */ = {
+		8B03DB18160C5DD50070B8B0 /* DMAIDemoViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8B03DB19160C5DD50070B8B0 /* en */,
 			);
-			name = DMViewController_iPad.xib;
+			name = DMAIDemoViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

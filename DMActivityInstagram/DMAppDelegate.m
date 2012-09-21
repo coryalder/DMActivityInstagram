@@ -8,7 +8,7 @@
 
 #import "DMAppDelegate.h"
 
-#import "DMViewController.h"
+#import "DMAIDemoViewController.h"
 
 @implementation DMAppDelegate
 
@@ -17,9 +17,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[DMViewController alloc] initWithNibName:@"DMViewController_iPhone" bundle:nil];
+        self.viewController = [[DMAIDemoViewController alloc] initWithNibName:@"DMViewController_iPhone" bundle:nil];
     } else {
-        self.viewController = [[DMViewController alloc] initWithNibName:@"DMViewController_iPad" bundle:nil];
+        self.viewController = [[DMAIDemoViewController alloc] initWithNibName:@"DMViewController_iPad" bundle:nil];
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

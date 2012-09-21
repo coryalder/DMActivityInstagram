@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DMViewController : UIViewController <UIPopoverControllerDelegate>
+@interface DMAIDemoViewController : UIViewController <UIPopoverControllerDelegate>
 
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) UIPopoverController *popover;

@@ -12,7 +12,6 @@
 @interface DMActivityInstagram : UIActivity <DMResizerDelegate, UIDocumentInteractionControllerDelegate>
 
 @property (nonatomic, strong) UIImage *shareImage;
-@property (nonatomic, strong) NSURL *shareURL;
 @property (nonatomic, strong) NSString *shareString;
 
 @property (nonatomic, strong) UIView *presentInView;

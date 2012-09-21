@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 Cory Alder. All rights reserved.
 //
 
-#import "DMViewController.h"
+#import "DMAIDemoViewController.h"
 #import "DMActivityInstagram.h"
 
-@interface DMViewController ()
+@interface DMAIDemoViewController ()
 
 @end
 
-@implementation DMViewController
+@implementation DMAIDemoViewController
 
 - (void)viewDidLoad
 {
