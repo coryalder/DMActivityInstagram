@@ -7,7 +7,7 @@ Add the following files to your project
 - `DMActivityInstagram.m`
 - `DMActivityInstagram.h`
 
-If your app creates non-square images, you're going to need these as well:
+These are required so your app can create non-square images:
 
 - `DMResizerViewController.h`
 - `DMResizerViewController.m`
@@ -21,9 +21,8 @@ See `DMAIDemoViewController` in the example project for details of how to use th
     NSURL *shareURL = [NSURL URLWithString:@"http://catpaint.info"];
     
     NSArray *activityItems = @[self.imageView.image, shareText, shareURL];
-    NSArray *applicationActivities = @[instagramActivity];
 
-    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:applicationActivities];
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:@[instagramActivity]];
     [self presentViewController:activityController animated:YES completion:nil];
 
 It's a bit more complex on iPad, as you need to use a UIPopoverController, but the gist is the same.
