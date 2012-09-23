@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong) UIView *presentInView;
 
+@property (nonatomic, strong) DMResizerViewController *resizeController;
+
 @property (nonatomic, strong) UIDocumentInteractionController *documentController;
 
 @end

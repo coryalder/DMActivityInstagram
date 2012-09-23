@@ -12,7 +12,7 @@
 
 @protocol DMResizerDelegate <NSObject>
 
--(void)resizer:(DMResizerViewController *)resizer finishedResizingWithResult:(UIImage *)image; // will be nil if user cancelled.
+-(void)resizer:(DMResizerViewController *)resizer finishedResizingWithResult:(UIImage *)image;
 
 @end
 
@@ -23,12 +23,15 @@
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet UILabel *bottomLabel;
 
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *doneButton;
+
 @property (nonatomic, strong) UIImage *inputImage;
 
 @property (nonatomic, strong) id <DMResizerDelegate> delegate;
 
--(IBAction)doneButton;
--(IBAction)rotateButton;
+-(IBAction)doneButtonAction;
+-(IBAction)rotateButtonAction;
+-(IBAction)cancelButtonAction;
 
 -(id)initWithImage:(UIImage *)imageObject;
 

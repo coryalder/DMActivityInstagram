@@ -29,8 +29,12 @@
 
 -(IBAction)actionButton:(id)sender {
     if (self.popover) {
-        if ([self.popover isPopoverVisible]) return;
-        self.popover = nil;
+        if ([self.popover isPopoverVisible]) {
+            return;
+        } else {
+            [self.popover dismissPopoverAnimated:YES];
+            self.popover = nil;
+        }
     }
     /* iOS 6 sharing, including instagram */
     

@@ -70,13 +70,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-
+ 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return self.imageView;
 }
 
 
--(IBAction)doneButton {
+-(IBAction)doneButtonAction {
     // draw the image into a new image.
     
     CGFloat screenScale = [[UIScreen mainScreen] scale];
@@ -134,8 +134,9 @@
     UIGraphicsEndImageContext();
 
     // newImage is the result.
-    if ([self.delegate respondsToSelector:@selector(resizer:finishedResizingWithResult:)]) [self.delegate resizer:self finishedResizingWithResult:newImage];
-    else UIImageWriteToSavedPhotosAlbum(newImage, nil, nil, nil);
+
+    NSAssert([self.delegate conformsToProtocol:@protocol(DMResizerDelegate)], @"Bad delegate %@", self.delegate);
+    [self.delegate resizer:self finishedResizingWithResult:newImage];
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)aScrollView {
@@ -148,8 +149,12 @@
                                    self.scrollView.contentSize.height * 0.5 + offsetY);
 }
 
+-(IBAction)cancelButtonAction {
+    NSAssert([self.delegate conformsToProtocol:@protocol(DMResizerDelegate)], @"Bad delegate %@", self.delegate);
+    [self.delegate resizer:self finishedResizingWithResult:nil]; // nil image == cancel button.
+}
 
--(void)rotateButton {
+-(void)rotateButtonAction {
     //NSLog(@"Rotate image 90 degrees.");
     rotation += M_PI/2;
     self.scrollView.transform = CGAffineTransformRotate(self.scrollView.transform, M_PI/2);

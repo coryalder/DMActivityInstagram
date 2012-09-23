@@ -56,19 +56,23 @@
     } // nil if no resize is required
     
     // resize controller if resize is required.
-    DMResizerViewController *resizeController = [[DMResizerViewController alloc] initWithImage:self.shareImage];
-    resizeController.delegate = self;
-    return resizeController;
+    if (!self.resizeController) {
+        self.resizeController = [[DMResizerViewController alloc] initWithImage:self.shareImage];
+        self.resizeController.delegate = self;
+    }
+    return self.resizeController;
 }
 
 -(void)resizer:(DMResizerViewController *)resizer finishedResizingWithResult:(UIImage *)image {
-    resizer.delegate = nil;
     if (image == nil) {
+        if (self.documentController) {
+            [self.documentController dismissMenuAnimated:YES];
+        }
         [self activityDidFinish:NO];
         return;
     } else {
+        self.presentInView = (UIView *)resizer.doneButton;
         self.shareImage = image;
-        self.presentInView = resizer.view;
         // performActivity
         [self performActivity];
     }
@@ -95,7 +99,6 @@
         return;
     } else {
         // success.
-        
     }
     
     // send it to instagram.
@@ -104,11 +107,13 @@
     self.documentController.delegate = self;
     [self.documentController setUTI:@"com.instagram.exclusivegram"];
     if (self.shareString) [self.documentController setAnnotation:@{@"InstagramCaption" : self.shareString}];
-    [self.documentController presentOpenInMenuFromRect:self.presentInView.bounds inView:self.presentInView animated:YES];
-    //[self.documentController presentOpenInMenuFromBarButtonItem:self.presentingButtonItem animated:YES];
+    
+    if (![self.documentController presentOpenInMenuFromBarButtonItem:self.presentInView animated:YES]) NSLog(@"couldn't present document interaction controller");
+    
+    //if (![self.documentController presentOpenInMenuFromRect:self.presentInView.bounds inView:self.presentInView animated:YES]) NSLog(@"couldn't present document interaction controller");
 }
 
-- (void)documentInteractionController:(UIDocumentInteractionController *)controller didEndSendingToApplication:(NSString *)application {
+-(void)documentInteractionController:(UIDocumentInteractionController *)controller willBeginSendingToApplication:(NSString *)application {
     [self activityDidFinish:YES];
 }
 

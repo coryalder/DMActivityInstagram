@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1536</int>
-		<string key="IBDocument.SystemVersion">12B19</string>
+		<string key="IBDocument.SystemVersion">12C54</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
-		<string key="IBDocument.AppKitVersion">1187</string>
-		<string key="IBDocument.HIToolboxVersion">624.00</string>
+		<string key="IBDocument.AppKitVersion">1187.34</string>
+		<string key="IBDocument.HIToolboxVersion">625.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">1926</string>
@@ -183,7 +183,6 @@
 								<string key="NSFrame">{{0, 416}, {320, 44}}</string>
 								<reference key="NSSuperview" ref="531875129"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:345</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -212,11 +211,11 @@
 										<reference key="IBUIToolbar" ref="559625194"/>
 										<int key="IBUISystemItemIdentifier">5</int>
 									</object>
-									<object class="IBUIBarButtonItem" id="769075506">
+									<object class="IBUIBarButtonItem" id="598805277">
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-										<float key="IBUIWidth">42</float>
+										<int key="IBUIStyle">1</int>
 										<reference key="IBUIToolbar" ref="559625194"/>
-										<int key="IBUISystemItemIdentifier">6</int>
+										<int key="IBUISystemItemIdentifier">1</int>
 									</object>
 								</object>
 							</object>
@@ -4673,6 +4672,14 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">doneButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="757849325"/>
+					</object>
+					<int key="connectionID">34</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="596271128"/>
 						<reference key="destination" ref="372490531"/>
@@ -4681,19 +4688,27 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">doneButton</string>
+						<string key="label">doneButtonAction</string>
 						<reference key="source" ref="757849325"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
-					<int key="connectionID">32</int>
+					<int key="connectionID">35</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">rotateButton</string>
+						<string key="label">rotateButtonAction</string>
 						<reference key="source" ref="256331244"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
-					<int key="connectionID">33</int>
+					<int key="connectionID">36</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">cancelButtonAction</string>
+						<reference key="source" ref="598805277"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">38</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4773,7 +4788,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 							<reference ref="434509781"/>
 							<reference ref="826247009"/>
 							<reference ref="256331244"/>
-							<reference ref="769075506"/>
+							<reference ref="598805277"/>
 						</object>
 						<reference key="parent" ref="531875129"/>
 					</object>
@@ -4813,15 +4828,15 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						<reference key="parent" ref="559625194"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="769075506"/>
-						<reference key="parent" ref="559625194"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">28</int>
 						<reference key="object" ref="850098242"/>
 						<reference key="parent" ref="987749113"/>
 						<string key="objectName">Instructions Pinch</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">37</int>
+						<reference key="object" ref="598805277"/>
+						<reference key="parent" ref="559625194"/>
 					</object>
 				</object>
 			</object>
@@ -4842,8 +4857,8 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<string>23.IBPluginDependency</string>
 					<string>24.IBPluginDependency</string>
 					<string>26.IBPluginDependency</string>
-					<string>27.IBPluginDependency</string>
 					<string>28.IBPluginDependency</string>
+					<string>37.IBPluginDependency</string>
 					<string>7.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
@@ -4882,7 +4897,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">33</int>
+			<int key="maxID">38</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4894,11 +4909,13 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>doneButton</string>
-							<string>rotateButton</string>
+							<string>cancelButtonAction</string>
+							<string>doneButtonAction</string>
+							<string>rotateButtonAction</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -4907,17 +4924,22 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>doneButton</string>
-							<string>rotateButton</string>
+							<string>cancelButtonAction</string>
+							<string>doneButtonAction</string>
+							<string>rotateButtonAction</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
-								<string key="name">doneButton</string>
+								<string key="name">cancelButtonAction</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
-								<string key="name">rotateButton</string>
+								<string key="name">doneButtonAction</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">rotateButtonAction</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>
@@ -4927,12 +4949,14 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>bottomLabel</string>
+							<string>doneButton</string>
 							<string>imageView</string>
 							<string>scrollView</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UILabel</string>
+							<string>UIBarButtonItem</string>
 							<string>UIImageView</string>
 							<string>UIScrollView</string>
 						</object>
@@ -4942,6 +4966,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>bottomLabel</string>
+							<string>doneButton</string>
 							<string>imageView</string>
 							<string>scrollView</string>
 						</object>
@@ -4950,6 +4975,10 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 							<object class="IBToOneOutletInfo">
 								<string key="name">bottomLabel</string>
 								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">doneButton</string>
+								<string key="candidateClassName">UIBarButtonItem</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">imageView</string>
