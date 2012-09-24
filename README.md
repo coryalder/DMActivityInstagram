@@ -29,6 +29,8 @@ See `DMAIDemoViewController` in the example project for details of how to use th
 
 It's a bit more complex on iPad, as you need to use a UIPopoverController, but the gist is the same.
 
+These classes are ARC enabled, but you can `-fobjc-arc` them to use in non-ARC projects.
+
 Pull requests welcomed. If you use this, and want to give something back, consider purchasing some or all of my apps (for instance [CatPaint](http://catpaint.info) and [Iconizer](http://itunes.apple.com/us/app/iconizer/id412346451?mt=12)). Obviously, envelopes full of cash are accepted as well.
 
 Note: in the [developer docs](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIActivity_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40011974) it says:
