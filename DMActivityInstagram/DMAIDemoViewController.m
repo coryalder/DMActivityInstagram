@@ -40,6 +40,9 @@
     
     DMActivityInstagram *instagramActivity = [[DMActivityInstagram alloc] init];
     
+    instagramActivity.presentFromButton = (UIBarButtonItem *)sender;
+    // this will only be used if the image doesn't need to be resized.
+    
     NSString *shareText = @"CatPaint #catpaint";
     NSURL *shareURL = [NSURL URLWithString:@"http://catpaint.info"];
     

@@ -71,7 +71,7 @@
         [self activityDidFinish:NO];
         return;
     } else {
-        self.presentInView = (UIView *)resizer.doneButton;
+        self.presentFromButton = resizer.doneButton;
         self.shareImage = image;
         // performActivity
         [self performActivity];
@@ -108,9 +108,7 @@
     [self.documentController setUTI:@"com.instagram.exclusivegram"];
     if (self.shareString) [self.documentController setAnnotation:@{@"InstagramCaption" : self.shareString}];
     
-    if (![self.documentController presentOpenInMenuFromBarButtonItem:self.presentInView animated:YES]) NSLog(@"couldn't present document interaction controller");
-    
-    //if (![self.documentController presentOpenInMenuFromRect:self.presentInView.bounds inView:self.presentInView animated:YES]) NSLog(@"couldn't present document interaction controller");
+    if (![self.documentController presentOpenInMenuFromBarButtonItem:self.presentFromButton animated:YES]) NSLog(@"couldn't present document interaction controller");
 }
 
 -(void)documentInteractionController:(UIDocumentInteractionController *)controller willBeginSendingToApplication:(NSString *)application {

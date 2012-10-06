@@ -31,6 +31,8 @@ It's a bit more complex on iPad, as you need to use a UIPopoverController, but t
 
 These classes are ARC enabled, but you can `-fobjc-arc` them to use in non-ARC projects.
 
+If your app creates square images, you need to set `UIActivityInstagram`'s `presentFromButton` property. This should be the `UIBarButtonItem` you are presenting the `UIActivityViewController` from. This property is overwritten if the image is not square, and the `UIDocumentInteractionController` is shown from within the resizer view instead.
+
 Pull requests welcomed. If you use this, and want to give something back, consider purchasing some or all of my apps (for instance [CatPaint](http://catpaint.info) and [Iconizer](http://itunes.apple.com/us/app/iconizer/id412346451?mt=12)). Obviously, envelopes full of cash are accepted as well.
 
 Note: in the [developer docs](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UIActivity_Class/Reference/Reference.html#//apple_ref/doc/uid/TP40011974) it says:
