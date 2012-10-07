@@ -23,6 +23,7 @@
 		8B03DB24160C62700070B8B0 /* DMActivityInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */; };
 		8B03DB2C160C6CEC0070B8B0 /* DMResizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B03DB2A160C6CEC0070B8B0 /* DMResizerViewController.m */; };
 		8B03DB2D160C6CEC0070B8B0 /* DMResizerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B03DB2B160C6CEC0070B8B0 /* DMResizerViewController.xib */; };
+		8BCB71D61621029300063B83 /* example_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB71D51621029300063B83 /* example_square.png */; };
 		8BFEBF99160C774900A4A213 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF95160C774900A4A213 /* instagram.png */; };
 		8BFEBF9A160C774900A4A213 /* instagram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF96160C774900A4A213 /* instagram@2x.png */; };
 		8BFEBF9B160C774900A4A213 /* instagram~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF97160C774900A4A213 /* instagram~ipad.png */; };
@@ -53,6 +54,7 @@
 		8B03DB29160C6CEC0070B8B0 /* DMResizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMResizerViewController.h; sourceTree = "<group>"; };
 		8B03DB2A160C6CEC0070B8B0 /* DMResizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMResizerViewController.m; sourceTree = "<group>"; };
 		8B03DB2B160C6CEC0070B8B0 /* DMResizerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMResizerViewController.xib; sourceTree = "<group>"; };
+		8BCB71D51621029300063B83 /* example_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_square.png; sourceTree = "<group>"; };
 		8BFEBF95160C774900A4A213 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		8BFEBF96160C774900A4A213 /* instagram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram@2x.png"; sourceTree = "<group>"; };
 		8BFEBF97160C774900A4A213 /* instagram~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram~ipad.png"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				8BFEBF97160C774900A4A213 /* instagram~ipad.png */,
 				8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */,
 				8B03DB20160C5F380070B8B0 /* example.png */,
+				8BCB71D51621029300063B83 /* example_square.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				8BFEBF9A160C774900A4A213 /* instagram@2x.png in Resources */,
 				8BFEBF9B160C774900A4A213 /* instagram~ipad.png in Resources */,
 				8BFEBF9C160C774900A4A213 /* instagram~ipad@2x.png in Resources */,
+				8BCB71D61621029300063B83 /* example_square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,14 +316,14 @@
 		8B03DB1E160C5DD50070B8B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Cory Alder (XG27T44ZTT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Cory Alder (XG27T44ZTT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DMActivityInstagram/DMActivityInstagram-Prefix.pch";
 				INFOPLIST_FILE = "DMActivityInstagram/DMActivityInstagram-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C174F352-1E02-4DE8-830A-68ED1705666B";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C174F352-1E02-4DE8-830A-68ED1705666B";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
