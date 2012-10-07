@@ -19,9 +19,14 @@
 
 @interface DMResizerViewController : UIViewController <UIScrollViewDelegate>
 
+@property (readwrite) BOOL skipCropping;
+
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet UILabel *bottomLabel;
+
+@property (nonatomic, strong) IBOutlet UIView *bottomView;
+@property (nonatomic, strong) IBOutlet UIView *topView;
 
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *doneButton;
 

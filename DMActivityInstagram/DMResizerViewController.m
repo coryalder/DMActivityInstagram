@@ -48,13 +48,22 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-    self.imageView.image = self.inputImage;
+    if (self.skipCropping) {
+        self.topView.hidden = YES;
+        self.bottomView.hidden = YES;
+    }
     
+    self.imageView.image = self.inputImage;
+        
     self.scrollView.minimumZoomScale = 1.0;
     self.scrollView.maximumZoomScale = 4;
     self.scrollView.contentSize = self.imageView.frame.size;
-    
+
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    if (self.skipCropping) [self doneButtonAction];
 }
 
 - (void)viewDidUnload

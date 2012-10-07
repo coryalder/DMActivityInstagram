@@ -51,14 +51,14 @@
 }
 
 - (UIViewController *)activityViewController {
-    if ([self imageIsSquare:self.shareImage]) {
-        return nil;
-    } // nil if no resize is required
-    
     // resize controller if resize is required.
     if (!self.resizeController) {
         self.resizeController = [[DMResizerViewController alloc] initWithImage:self.shareImage];
         self.resizeController.delegate = self;
+        
+        if ([self imageIsSquare:self.shareImage]) {
+            self.resizeController.skipCropping = YES;
+        }
     }
     return self.resizeController;
 }
