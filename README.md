@@ -15,7 +15,7 @@ If you're still living in the pre-CocoaPods stone age like a neanderthal, add th
 - `DMResizerViewController.xib`
 - `instagram.png`
 - `instagram@2x.png`
-- `instagram~ipad.png
+- `instagram~ipad.png`
 - `instagram~ipad@2x.png`
 
 See `DMAIDemoViewController` in the example project for details of how to use this class. In short, though:
