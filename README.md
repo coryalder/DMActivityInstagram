@@ -4,7 +4,7 @@ iOS 6 style sharing for Instagram.
 
 The easiest way to integrate DMActivityInstagram is via [CocoaPods](http://cocoapods.org).
 
-    pod 'DMActivityInstagram', :git => 'https://github.com/coryalder/DMActivityInstagram.git'
+    pod 'DMActivityInstagram', '0.0.1' 
 
 If you're still living in the pre-CocoaPods stone age like a neanderthal, add the following files to your project
 
