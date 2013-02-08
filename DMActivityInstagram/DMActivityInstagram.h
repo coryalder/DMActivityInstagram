@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UIImage *shareImage;
 @property (nonatomic, strong) NSString *shareString;
+@property (readwrite) BOOL includeURL;
 
 @property (nonatomic, strong) UIBarButtonItem *presentFromButton;
 // overwritten if shareImage is non-square, because the document-interaction-controller is presented in the resize view.

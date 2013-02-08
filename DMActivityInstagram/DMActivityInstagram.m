@@ -43,7 +43,7 @@
         else if ([item isKindOfClass:[NSString class]]) {
             self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),item]; // concat, with space if already exists.
         }
-        else if ([item isKindOfClass:[NSURL class]]) {
+        else if ([item isKindOfClass:[NSURL class]] && self.includeURL) {
             self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),[(NSURL *)item absoluteString]]; // concat, with space if already exists.
         }
         else NSLog(@"Unknown item type %@", item);
@@ -117,7 +117,8 @@
 
 -(BOOL)imageIsLargeEnough:(UIImage *)image {
     CGSize imageSize = [image size];
-    return (imageSize.height >= 612 && imageSize.width >= 612);
+
+    return ((imageSize.height * image.scale) >= 612 && (imageSize.width * image.scale) >= 612);
 }
 
 -(BOOL)imageIsSquare:(UIImage *)image {
