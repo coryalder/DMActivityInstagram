@@ -32,6 +32,12 @@ See `DMAIDemoViewController` in the example project for details of how to use th
 
 It's a bit more complex on iPad, as you need to use a UIPopoverController, but the gist is the same. Again, see the example for usage.
 
+## Simulator Use
+
+By default `DMActivityInstagram` will only appear in the `UIActivityViewController`'s list of options if it detects Instagram is installed on the device (via `canOpenURL:`). This means it will NOT appear in the simulator, or on devices without Instagram installed.
+
+-----
+
 These classes are ARC enabled, but you can `-fobjc-arc` them to use in non-ARC projects (not required if you're using CocoaPods).
 
 If your *iPad* app creates square images, you need to set `UIActivityInstagram`'s `presentFromButton` property. This should be the `UIBarButtonItem` you are presenting the `UIActivityViewController` from. This property is overwritten if the image is not square, and the `UIDocumentInteractionController` is shown from within the resizer view instead.
