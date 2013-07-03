@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "DMActivityInstagram"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A UIActivity for Instagram sharing in iOS 6."
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/coryalder/DMActivityInstagram.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/coryalder/DMActivityInstagram.git", :tag => "0.0.3" }
   s.description  = <<-DESC
                      DMActivityInstagram is a UIActivity for sharing to instagram.
                      Use with iOS 6's UIActivityViewController.
