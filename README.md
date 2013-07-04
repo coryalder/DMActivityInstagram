@@ -4,7 +4,7 @@ iOS 6 style sharing for Instagram.
 
 The easiest way to integrate DMActivityInstagram is via [CocoaPods](http://cocoapods.org).
 
-    pod 'DMActivityInstagram', '0.0.1' 
+    pod 'DMActivityInstagram', '0.0.2' 
 
 If you're still living in the pre-CocoaPods stone age like a neanderthal, add the following files to your project
 
@@ -31,6 +31,12 @@ See `DMAIDemoViewController` in the example project for details of how to use th
     [self presentViewController:activityController animated:YES completion:nil];
 
 It's a bit more complex on iPad, as you need to use a UIPopoverController, but the gist is the same. Again, see the example for usage.
+
+## Simulator Use
+
+By default `DMActivityInstagram` will only appear in the `UIActivityViewController`'s list of options if it detects Instagram is installed on the device (via `canOpenURL:`). This means it will NOT appear in the simulator, or on devices without Instagram installed.
+
+-----
 
 These classes are ARC enabled, but you can `-fobjc-arc` them to use in non-ARC projects (not required if you're using CocoaPods).
 
