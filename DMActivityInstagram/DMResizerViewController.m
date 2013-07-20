@@ -130,7 +130,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     [self.imageView.backgroundColor setFill];
-    CGContextFillRect(context, (CGRect){0,0,640,640});
+    CGContextFillRect(context, (CGRect){{0,0},{640,640}});
     
     // Required to apply rotation, move the axis of rotation by a little bit
     CGContextTranslateCTM(context, 320, 320); // drawingRect has been offset to handle this
