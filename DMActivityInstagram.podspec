@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/coryalder/DMActivityInstagram"
   s.license      = 'MIT'
   s.author       = { "Cory Alder" => "cory@davander.com" }
-  s.source_files = 'DMActivityInstagram/DMActivityInstagram.{h,m}', 'DMActivityInstagram/DMResizerViewController.{h,m}'
+  s.source_files = 'DMActivityInstagram/DMActivityInstagram.{h,m}', 'DMActivityInstagram/DMResizerViewController.{h,m}', 'DMActivityInstagram/DMColorPickerView.{h,m}'
   s.resources = "DMActivityInstagram/instagram*.png", "DMActivityInstagram/DMResizerViewController.xib"
   s.requires_arc = true
 end

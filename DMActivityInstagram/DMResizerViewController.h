@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DMColorPickerView.h"
+
 @class DMResizerViewController;
 
 @protocol DMResizerDelegate <NSObject>
 
 -(void)resizer:(DMResizerViewController *)resizer finishedResizingWithResult:(UIImage *)image;
+-(NSArray *)backgroundColors;
 
 @end
 
@@ -30,6 +33,8 @@
 
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *doneButton;
 
+@property (nonatomic, strong) IBOutlet DMColorPickerView *colorPicker;
+
 @property (nonatomic, strong) UIImage *inputImage;
 
 @property (nonatomic, strong) id <DMResizerDelegate> delegate;
@@ -38,6 +43,8 @@
 -(IBAction)rotateButtonAction;
 -(IBAction)cancelButtonAction;
 
--(id)initWithImage:(UIImage *)imageObject;
+-(IBAction)changeColor:(id)sender;
+
+-(id)initWithImage:(UIImage *)imageObject andDelegate:(id<DMResizerDelegate>)delegate;
 
 @end

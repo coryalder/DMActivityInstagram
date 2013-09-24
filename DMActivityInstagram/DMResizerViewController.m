@@ -8,6 +8,7 @@
 
 #import "DMResizerViewController.h"
 
+
 @interface DMResizerViewController () {
     CGFloat rotation;
 }
@@ -16,12 +17,15 @@
 
 @implementation DMResizerViewController
 
--(id)initWithImage:(UIImage *)imageObject {
+-(id)initWithImage:(UIImage *)imageObject andDelegate:(id<DMResizerDelegate>)delegate {
     if (!(self = [super initWithNibName:@"DMResizerViewController" bundle:nil])) return nil;
+    
+    self.delegate = delegate;
     
     UIImage *exportImage = [UIImage imageWithCGImage:imageObject.CGImage scale:imageObject.scale orientation:UIImageOrientationUp];
     
     self.inputImage = exportImage;
+    
     
     return self;
 }
@@ -45,6 +49,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.colorPicker.colors = [self.delegate backgroundColors];
+    
     
     self.navigationController.navigationBarHidden = YES;
     
@@ -170,6 +177,13 @@
     //NSLog(@"Rotate image 90 degrees.");
     rotation += M_PI/2;
     self.scrollView.transform = CGAffineTransformRotate(self.scrollView.transform, M_PI/2);
+}
+
+-(IBAction)changeColor:(UIButton *)sender {
+    if (!sender || ![sender respondsToSelector:@selector(backgroundColor)]) return;
+    
+    self.imageView.backgroundColor = sender.backgroundColor;
+    
 }
 
 

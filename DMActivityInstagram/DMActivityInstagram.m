@@ -55,8 +55,7 @@
 - (UIViewController *)activityViewController {
     // resize controller if resize is required.
     if (!self.resizeController) {
-        self.resizeController = [[DMResizerViewController alloc] initWithImage:self.shareImage];
-        self.resizeController.delegate = self;
+        self.resizeController = [[DMResizerViewController alloc] initWithImage:self.shareImage andDelegate:self];
         
         if ([self imageIsSquare:self.shareImage]) {
             self.resizeController.skipCropping = YES;
