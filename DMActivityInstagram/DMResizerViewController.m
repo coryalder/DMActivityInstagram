@@ -49,7 +49,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+   
+    self.colorPicker.delegate = self; 
     self.colorPicker.colors = [self.delegate backgroundColors];
     
     

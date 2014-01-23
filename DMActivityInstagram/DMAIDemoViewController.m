@@ -43,6 +43,22 @@
     instagramActivity.presentFromButton = (UIBarButtonItem *)sender;
     // this will only be used if the image doesn't need to be resized.
     
+    /*instagramActivity.backgroundColors  = @[
+                                            [UIColor blackColor],
+                                            [UIColor whiteColor],
+                                            @"space.jpg",
+                                            @"edited.jpg",
+                                            @"camo.png",
+                                            @"bigtiger.jpg",
+                                            @"knit2.jpg",
+                                            @"charlie-brown.jpg",
+                                            @"wood.jpg",
+                                            @"purple-td.jpg",
+                                            @"blue-td.jpg",
+                                            @"dark-td.jpg"
+                                            ];*/
+    
+    
     NSString *shareText = @"CatPaint #catpaint";
     NSURL *shareURL = [NSURL URLWithString:@"http://catpaint.info"];
     
