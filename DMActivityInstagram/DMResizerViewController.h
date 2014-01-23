@@ -20,7 +20,7 @@
 @end
 
 
-@interface DMResizerViewController : UIViewController <UIScrollViewDelegate>
+@interface DMResizerViewController : UIViewController <UIScrollViewDelegate, DMColorPickerDelegate>
 
 @property (readwrite) BOOL skipCropping;
 
