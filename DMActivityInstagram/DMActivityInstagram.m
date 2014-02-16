@@ -22,6 +22,9 @@
     return [UIImage imageNamed:@"instagram.png"];
 }
 
++ (UIActivityCategory)activityCategory {
+    return UIActivityCategoryShare;
+}
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     
