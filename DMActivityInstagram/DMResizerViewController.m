@@ -8,40 +8,29 @@
 
 #import "DMResizerViewController.h"
 
-
 @interface DMResizerViewController () {
     CGFloat rotation;
+    
+    BOOL skipCropping;
+    UIImage *inputImage;
+    __weak id<DMResizerDelegate> resizerDelegate;
 }
+
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *doneButton;
+
 @end
 
 
 @implementation DMResizerViewController
 
--(id)initWithImage:(UIImage *)imageObject andDelegate:(id<DMResizerDelegate>)delegate {
-    if (!(self = [super initWithNibName:@"DMResizerViewController" bundle:nil])) return nil;
-    
-    self.delegate = delegate;
-    
-    UIImage *exportImage = [UIImage imageWithCGImage:imageObject.CGImage scale:imageObject.scale orientation:UIImageOrientationUp];
-    
-    self.inputImage = exportImage;
-    
-    
-    return self;
-}
+@synthesize skipCropping;
+@synthesize inputImage;
+@synthesize resizerDelegate;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+#pragma mark - DMResizerViewControllerDelegate
+- (UIBarButtonItem*)doneButtonForDocumentController
 {
-    NSAssert(FALSE, @"Don't call initWithNibName, use initWithImage instead");
-    return nil;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+    return self.doneButton;
 }
 
 #pragma mark - View lifecycle
@@ -51,7 +40,7 @@
     [super viewDidLoad];
    
     self.colorPicker.delegate = self; 
-    self.colorPicker.colors = [self.delegate backgroundColors];
+    self.colorPicker.colors = [self.resizerDelegate backgroundColors];
     
     
     self.navigationController.navigationBarHidden = YES;
@@ -155,8 +144,8 @@
 
     // newImage is the result.
 
-    NSAssert([self.delegate conformsToProtocol:@protocol(DMResizerDelegate)], @"Bad delegate %@", self.delegate);
-    [self.delegate resizer:self finishedResizingWithResult:newImage];
+    NSAssert([self.resizerDelegate conformsToProtocol:@protocol(DMResizerDelegate)], @"Bad delegate %@", self.resizerDelegate);
+    [self.resizerDelegate resizer:self finishedResizingWithResult:newImage];
 }
 
 - (void)scrollViewDidZoom:(UIScrollView *)aScrollView {
@@ -170,8 +159,8 @@
 }
 
 -(IBAction)cancelButtonAction {
-    NSAssert([self.delegate conformsToProtocol:@protocol(DMResizerDelegate)], @"Bad delegate %@", self.delegate);
-    [self.delegate resizer:self finishedResizingWithResult:nil]; // nil image == cancel button.
+    NSAssert([self.resizerDelegate conformsToProtocol:@protocol(DMResizerDelegate)], @"Bad delegate %@", self.resizerDelegate);
+    [self.resizerDelegate resizer:self finishedResizingWithResult:nil]; // nil image == cancel button.
 }
 
 -(void)rotateButtonAction {

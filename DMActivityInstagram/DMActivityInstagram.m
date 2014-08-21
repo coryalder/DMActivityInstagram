@@ -7,6 +7,13 @@
 //
 
 #import "DMActivityInstagram.h"
+#import "DMResizerViewController.h"
+
+@interface DMActivityInstagram()
+
+@property (nonatomic, strong) UIViewController<DMResizerViewControllerDelegate> *resizeController;
+
+@end
 
 @implementation DMActivityInstagram
 
@@ -55,7 +62,17 @@
 - (UIViewController *)activityViewController {
     // resize controller if resize is required.
     if (!self.resizeController) {
-        self.resizeController = [[DMResizerViewController alloc] initWithImage:self.shareImage andDelegate:self];
+        
+        if ([self.delegate viewControllerForResizing]) {
+            self.resizeController = [self.delegate viewControllerForResizing];
+        } else {
+            self.resizeController = [DMResizerViewController new];
+        }
+        
+        self.resizeController.resizerDelegate = self;
+        self.resizeController.inputImage = [UIImage imageWithCGImage:self.shareImage.CGImage
+                                                               scale:self.shareImage.scale
+                                                         orientation:UIImageOrientationUp];
         
         if ([self imageIsSquare:self.shareImage]) {
             self.resizeController.skipCropping = YES;
@@ -64,7 +81,8 @@
     return self.resizeController;
 }
 
--(void)resizer:(DMResizerViewController *)resizer finishedResizingWithResult:(UIImage *)image {
+#pragma mark - DMResizerControllerDelegate
+-(void)resizer:(UIViewController<DMResizerViewControllerDelegate> *)resizer finishedResizingWithResult:(UIImage *)image {
     if (image == nil) {
         if (self.documentController) {
             [self.documentController dismissMenuAnimated:YES];
@@ -72,7 +90,7 @@
         [self activityDidFinish:NO];
         return;
     } else {
-        self.presentFromButton = resizer.doneButton;
+        self.presentFromButton = resizer.doneButtonForDocumentController;
         self.shareImage = image;
         // performActivity
         [self performActivity];

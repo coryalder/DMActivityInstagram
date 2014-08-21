@@ -82,6 +82,7 @@
 		8BFEBF96160C774900A4A213 /* instagram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram@2x.png"; sourceTree = "<group>"; };
 		8BFEBF97160C774900A4A213 /* instagram~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram~ipad.png"; sourceTree = "<group>"; };
 		8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram~ipad@2x.png"; sourceTree = "<group>"; };
+		A7242DBB19A63BEE000F44FF /* DMResizerViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMResizerViewControllerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +133,7 @@
 				8B03DB0A160C5DD50070B8B0 /* DMAppDelegate.m */,
 				8B03DB12160C5DD50070B8B0 /* DMAIDemoViewController.h */,
 				8B03DB13160C5DD50070B8B0 /* DMAIDemoViewController.m */,
+				A7242DBB19A63BEE000F44FF /* DMResizerViewControllerDelegate.h */,
 				8B03DB22160C62700070B8B0 /* DMActivityInstagram.h */,
 				8B03DB23160C62700070B8B0 /* DMActivityInstagram.m */,
 				8B03DB29160C6CEC0070B8B0 /* DMResizerViewController.h */,

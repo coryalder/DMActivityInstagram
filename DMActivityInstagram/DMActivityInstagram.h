@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DMResizerViewController.h"
+
+@class DMResizerViewController;
+@protocol DMResizerViewControllerDelegate;
+
+@protocol DMResizerDelegate <NSObject>
+
+-(void)resizer:(UIViewController<DMResizerViewControllerDelegate> *)resizer finishedResizingWithResult:(UIImage *)image;
+-(NSArray *)backgroundColors;
+
+@end
+
+@protocol DMActivityInstagramDelegate <NSObject>
+
+- (UIViewController<DMResizerViewControllerDelegate> *)viewControllerForResizing;
+
+@end
 
 @interface DMActivityInstagram : UIActivity <DMResizerDelegate, UIDocumentInteractionControllerDelegate>
 
@@ -19,8 +34,8 @@
 @property (nonatomic, strong) UIBarButtonItem *presentFromButton;
 // overwritten if shareImage is non-square, because the document-interaction-controller is presented in the resize view.
 
-@property (nonatomic, strong) DMResizerViewController *resizeController;
-
 @property (nonatomic, strong) UIDocumentInteractionController *documentController;
+
+@property (nonatomic, weak) id<DMActivityInstagramDelegate> delegate;
 
 @end
