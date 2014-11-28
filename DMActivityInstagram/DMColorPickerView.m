@@ -28,6 +28,7 @@
 -(void)setup {
     [self addObserver:self forKeyPath:@"colors" options:NSKeyValueObservingOptionNew context:NULL];
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self addSubview:self.scrollView];
 }
 
