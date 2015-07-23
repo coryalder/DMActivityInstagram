@@ -71,6 +71,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     if (self.skipCropping) [self doneButtonAction];
 }
 
