@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795FF88C1B8318CC004DC22C /* instagram@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 795FF8851B8318CC004DC22C /* instagram@2x~iphone.png */; };
+		795FF88D1B8318CC004DC22C /* instagram@3x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 795FF8861B8318CC004DC22C /* instagram@3x~iphone.png */; };
+		795FF8911B83198D004DC22C /* instagram@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 795FF8901B83198D004DC22C /* instagram@2x~ipad.png */; };
 		8B03DAFB160C5DD50070B8B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B03DAFA160C5DD50070B8B0 /* UIKit.framework */; };
 		8B03DAFD160C5DD50070B8B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B03DAFC160C5DD50070B8B0 /* Foundation.framework */; };
 		8B03DAFF160C5DD50070B8B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B03DAFE160C5DD50070B8B0 /* CoreGraphics.framework */; };
@@ -35,13 +38,12 @@
 		8BD3FCD517F11299001155D6 /* charlie-brown@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3FCCB17F11299001155D6 /* charlie-brown@2x.jpg */; };
 		8BD3FCD617F11299001155D6 /* wood@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3FCCC17F11299001155D6 /* wood@2x.jpg */; };
 		8BD3FCD817F11DBC001155D6 /* knit2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BD3FCD717F11DBC001155D6 /* knit2@2x.jpg */; };
-		8BFEBF99160C774900A4A213 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF95160C774900A4A213 /* instagram.png */; };
-		8BFEBF9A160C774900A4A213 /* instagram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF96160C774900A4A213 /* instagram@2x.png */; };
-		8BFEBF9B160C774900A4A213 /* instagram~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF97160C774900A4A213 /* instagram~ipad.png */; };
-		8BFEBF9C160C774900A4A213 /* instagram~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		795FF8851B8318CC004DC22C /* instagram@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram@2x~iphone.png"; sourceTree = "<group>"; };
+		795FF8861B8318CC004DC22C /* instagram@3x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram@3x~iphone.png"; sourceTree = "<group>"; };
+		795FF8901B83198D004DC22C /* instagram@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram@2x~ipad.png"; sourceTree = "<group>"; };
 		8B03DAF6160C5DD50070B8B0 /* DMAI Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DMAI Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B03DAFA160C5DD50070B8B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8B03DAFC160C5DD50070B8B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,10 +80,6 @@
 		8BD3FCCB17F11299001155D6 /* charlie-brown@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "charlie-brown@2x.jpg"; sourceTree = "<group>"; };
 		8BD3FCCC17F11299001155D6 /* wood@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood@2x.jpg"; sourceTree = "<group>"; };
 		8BD3FCD717F11DBC001155D6 /* knit2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "knit2@2x.jpg"; sourceTree = "<group>"; };
-		8BFEBF95160C774900A4A213 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
-		8BFEBF96160C774900A4A213 /* instagram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram@2x.png"; sourceTree = "<group>"; };
-		8BFEBF97160C774900A4A213 /* instagram~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram~ipad.png"; sourceTree = "<group>"; };
-		8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram~ipad@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,10 +180,9 @@
 		8BFEBF9D160C776000A4A213 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8BFEBF95160C774900A4A213 /* instagram.png */,
-				8BFEBF96160C774900A4A213 /* instagram@2x.png */,
-				8BFEBF97160C774900A4A213 /* instagram~ipad.png */,
-				8BFEBF98160C774900A4A213 /* instagram~ipad@2x.png */,
+				795FF8851B8318CC004DC22C /* instagram@2x~iphone.png */,
+				795FF8861B8318CC004DC22C /* instagram@3x~iphone.png */,
+				795FF8901B83198D004DC22C /* instagram@2x~ipad.png */,
 				8B03DB20160C5F380070B8B0 /* example.png */,
 				8BCB71D51621029300063B83 /* example_square.png */,
 			);
@@ -248,6 +245,7 @@
 				8BD3FCCD17F11299001155D6 /* space@2x.jpg in Resources */,
 				8B03DB05160C5DD50070B8B0 /* InfoPlist.strings in Resources */,
 				8B03DB0D160C5DD50070B8B0 /* Default.png in Resources */,
+				795FF88D1B8318CC004DC22C /* instagram@3x~iphone.png in Resources */,
 				8BD3FCD517F11299001155D6 /* charlie-brown@2x.jpg in Resources */,
 				8B03DB0F160C5DD50070B8B0 /* Default@2x.png in Resources */,
 				8B03DB11160C5DD50070B8B0 /* Default-568h@2x.png in Resources */,
@@ -257,13 +255,11 @@
 				8B03DB21160C5F380070B8B0 /* example.png in Resources */,
 				8BD3FCCF17F11299001155D6 /* bigtiger@2x.jpg in Resources */,
 				8B03DB2D160C6CEC0070B8B0 /* DMResizerViewController.xib in Resources */,
-				8BFEBF99160C774900A4A213 /* instagram.png in Resources */,
-				8BFEBF9A160C774900A4A213 /* instagram@2x.png in Resources */,
+				795FF88C1B8318CC004DC22C /* instagram@2x~iphone.png in Resources */,
 				8BD3FCD417F11299001155D6 /* dark-td@2x.jpg in Resources */,
 				8BD3FCCE17F11299001155D6 /* camo@2x.png in Resources */,
-				8BFEBF9B160C774900A4A213 /* instagram~ipad.png in Resources */,
-				8BFEBF9C160C774900A4A213 /* instagram~ipad@2x.png in Resources */,
 				8BCB71D61621029300063B83 /* example_square.png in Resources */,
+				795FF8911B83198D004DC22C /* instagram@2x~ipad.png in Resources */,
 				8BD3FCD817F11DBC001155D6 /* knit2@2x.jpg in Resources */,
 				8BD3FCD017F11299001155D6 /* edited@2x.jpg in Resources */,
 				8BD3FCD617F11299001155D6 /* wood@2x.jpg in Resources */,
