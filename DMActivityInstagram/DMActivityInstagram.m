@@ -22,6 +22,9 @@
     return [UIImage imageNamed:@"instagram.png" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
 }
 
++ (UIActivityCategory)activityCategory {
+    return UIActivityCategoryShare;
+}
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     
