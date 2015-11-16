@@ -48,7 +48,13 @@
             self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),[(NSURL *)item absoluteString]]; // concat, with space if already exists.
           }
         }
-        else NSLog(@"Unknown item type %@", item);
+        else {
+            NSString *itemStr  = [[NSString alloc] initWithFormat:@"%@", item];
+            NSString *truncStr = (itemStr.length > 250) ?
+                [[NSString alloc] initWithFormat:@"%@...", [itemStr substringToIndex:250]]  :
+                itemStr;
+            NSLog(@"Unknown item type: %@", truncStr);
+        }
     }
 }
 
