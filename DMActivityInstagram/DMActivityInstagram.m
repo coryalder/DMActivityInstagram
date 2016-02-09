@@ -10,6 +10,10 @@
 
 @implementation DMActivityInstagram
 
++ (UIActivityCategory)activityCategory {
+    return UIActivityCategoryShare;
+}
+
 - (NSString *)activityType {
     return @"UIActivityTypePostToInstagram";
 }
@@ -21,7 +25,6 @@
 - (UIImage *)activityImage {
     return [UIImage imageNamed:@"instagram.png" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
 }
-
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     
