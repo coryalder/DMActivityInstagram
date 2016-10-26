@@ -28,6 +28,10 @@
     NSURL *instagramURL = [NSURL URLWithString:@"instagram://app"];
     if (![[UIApplication sharedApplication] canOpenURL:instagramURL]) return NO; // no instagram.
     
+    if (self.shareImage) {
+        if ([self imageIsLargeEnough:self.shareImage]) return YES; // has image, of sufficient size.
+    }
+    
     for (UIActivityItemProvider *item in activityItems) {
         if ([item isKindOfClass:[UIImage class]]) {
             if ([self imageIsLargeEnough:(UIImage *)item]) return YES; // has image, of sufficient size.
@@ -39,7 +43,7 @@
 
 - (void)prepareWithActivityItems:(NSArray *)activityItems {
     for (id item in activityItems) {
-        if ([item isKindOfClass:[UIImage class]]) self.shareImage = item;
+        if ([item isKindOfClass:[UIImage class]]) self.shareImage = self.shareImage ?: item;
         else if ([item isKindOfClass:[NSString class]]) {
             self.shareString = [(self.shareString ? self.shareString : @"") stringByAppendingFormat:@"%@%@",(self.shareString ? @" " : @""),item]; // concat, with space if already exists.
         }
